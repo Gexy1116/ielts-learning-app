@@ -1,0 +1,112 @@
+import type { DictationExercise } from '../../types/english';
+
+const S = (text: string, translation: string) => ({ audioText: text, correctText: text, translation });
+
+export const dictationExercises: DictationExercise[] = [
+  // ===== Level 1: Short sentences =====
+  { id:'dict-01',title:'Short Sentences - Daily Life',level:1,stage:1,
+    sentences:[
+      S('I get up at seven o\'clock every morning.','我每天早上七点起床。'),
+      S('She likes to read books in her free time.','她喜欢在空闲时间读书。'),
+      S('The weather is very nice today.','今天天气很好。'),
+      S('Could you please pass me the salt?','请把盐递给我好吗？'),
+      S('They went to the park last Sunday.','他们上周日去了公园。'),
+      S('My brother is studying at the library right now.','我弟弟现在正在图书馆学习。'),
+      S('We usually have dinner at six thirty in the evening.','我们通常在晚上六点半吃晚饭。'),
+      S('Would you like a cup of tea or coffee?','你想要一杯茶还是咖啡？'),
+      S('The children are playing happily in the garden.','孩子们正在花园里开心地玩耍。'),
+      S('She bought a beautiful dress for the party.','她为派对买了一条漂亮的裙子。'),
+    ],
+  },
+  { id:'dict-01b',title:'Short Sentences - Travel',level:1,stage:1,
+    sentences:[
+      S('How much does a ticket to London cost?','去伦敦的票多少钱？'),
+      S('The train leaves from platform number four.','火车从四号站台出发。'),
+      S('I need to book a hotel room for two nights.','我需要预订两晚的酒店房间。'),
+      S('Excuse me, where is the nearest bus stop?','打扰一下，最近的公交站在哪里？'),
+      S('What time does the museum open tomorrow?','博物馆明天几点开门？'),
+      S('The flight was delayed by about two hours.','航班延误了大约两个小时。'),
+      S('She packed her suitcase the night before the trip.','她在旅行前一晚收拾了行李。'),
+      S('We took a taxi from the airport to the hotel.','我们从机场打车到酒店。'),
+    ],
+  },
+  // ===== Level 2: Medium sentences =====
+  { id:'dict-02',title:'Medium Sentences - Academic',level:2,stage:2,
+    sentences:[
+      S('The research indicates that regular exercise improves mental health.','研究表明，定期锻炼可以改善心理健康。'),
+      S('Many students find it challenging to balance study and social activities.','许多学生发现平衡学习和社交活动很有挑战性。'),
+      S('Technology has dramatically changed the way people communicate.','技术极大地改变了人们的交流方式。'),
+      S('The government has introduced new policies to protect the environment.','政府出台了保护环境的新政策。'),
+      S('It is important to consider all possible outcomes before making a decision.','在做决定前考虑所有可能的结果很重要。'),
+      S('The company reported a significant increase in profits this year.','公司报告今年利润显著增长。'),
+      S('Learning a second language can enhance cognitive abilities and memory.','学习第二语言可以增强认知能力和记忆力。'),
+      S('The survey results show that most people prefer working from home.','调查结果显示大多数人更喜欢在家工作。'),
+    ],
+  },
+  { id:'dict-02b',title:'Medium Sentences - Society',level:2,stage:2,
+    sentences:[
+      S('Immigration has contributed to the cultural diversity of many cities.','移民为许多城市的文化多样性做出了贡献。'),
+      S('The gap between rich and poor continues to widen in many countries.','许多国家的贫富差距继续扩大。'),
+      S('Access to quality education remains a challenge in rural areas.','在农村地区，获取优质教育仍然是一个挑战。'),
+      S('Social media has both positive and negative effects on young people.','社交媒体对年轻人既有积极影响也有消极影响。'),
+      S('The aging population is putting pressure on healthcare systems worldwide.','人口老龄化正在给全球医疗系统带来压力。'),
+      S('Renewable energy sources are becoming increasingly cost-effective.','可再生能源正变得越来越具有成本效益。'),
+    ],
+  },
+  // ===== Level 3: Longer sentences =====
+  { id:'dict-03',title:'Longer Sentences - Science & Tech',level:3,stage:2,
+    sentences:[
+      S('Artificial intelligence has the potential to transform industries ranging from healthcare to transportation.','人工智能有潜力改变从医疗保健到交通运输的各个行业。'),
+      S('Scientists have discovered a new species of marine life in the deepest parts of the Pacific Ocean.','科学家在太平洋最深处发现了一种新的海洋生物物种。'),
+      S('The development of electric vehicles is expected to reduce carbon emissions significantly over the next decade.','电动汽车的发展预计在未来十年内将显著减少碳排放。'),
+      S('Advances in genetic research have opened up new possibilities for treating previously incurable diseases.','基因研究的进步为治疗以前无法治愈的疾病开辟了新的可能性。'),
+      S('The amount of data generated globally each day has increased exponentially with the rise of social media and smartphones.','随着社交媒体和智能手机的兴起，全球每天产生的数据量呈指数级增长。'),
+    ],
+  },
+  { id:'dict-03b',title:'Longer Sentences - Economy & Business',level:3,stage:2,
+    sentences:[
+      S('The global economy has experienced unprecedented challenges due to supply chain disruptions and rising inflation.','由于供应链中断和通货膨胀上升，全球经济经历了前所未有的挑战。'),
+      S('Many companies are now prioritizing sustainability and corporate social responsibility in their business strategies.','许多公司现在在其商业战略中优先考虑可持续性和企业社会责任。'),
+      S('Remote working has fundamentally changed the traditional office environment and employee expectations worldwide.','远程工作从根本上改变了全球传统的办公环境和员工期望。'),
+      S('Investing in education and training is widely regarded as essential for long-term economic growth and prosperity.','投资教育和培训被广泛认为对长期经济增长和繁荣至关重要。'),
+      S('The rise of the gig economy has created both opportunities and challenges for workers around the world.','零工经济的兴起为世界各地的劳动者创造了机遇也带来了挑战。'),
+    ],
+  },
+  // ===== Level 4: Paragraphs =====
+  { id:'dict-04',title:'Short Paragraph - Environment',level:4,stage:3,
+    sentences:[
+      S('Climate change is one of the most pressing issues facing the world today.','气候变化是当今世界面临的最紧迫问题之一。'),
+      S('Rising global temperatures are causing polar ice caps to melt at an alarming rate.','全球气温上升正在导致极地冰盖以惊人的速度融化。'),
+      S('This, in turn, leads to rising sea levels, which threaten coastal communities around the world.','这反过来又导致海平面上升，威胁着世界各地的沿海社区。'),
+      S('Scientists agree that immediate and decisive action is necessary to prevent the worst effects of global warming.','科学家们一致认为，需要采取立即和果断的行动来防止全球变暖的最坏影响。'),
+      S('Individuals can contribute by reducing their carbon footprint through lifestyle changes and supporting sustainable practices.','个人可以通过改变生活方式和支持可持续实践来减少碳足迹，从而做出贡献。'),
+    ],
+  },
+  { id:'dict-04b',title:'Short Paragraph - Education',level:4,stage:3,
+    sentences:[
+      S('Education is widely recognized as the cornerstone of personal and societal development.','教育被广泛认为是个人和社会发展的基石。'),
+      S('Access to quality education empowers individuals to reach their full potential and contribute meaningfully to their communities.','获得优质教育使个人能够充分发挥潜力，有意义地为社区做出贡献。'),
+      S('In recent years, online learning platforms have democratized access to knowledge on an unprecedented scale.','近年来，在线学习平台以前所未有的规模使知识获取变得民主化。'),
+      S('However, the digital divide remains a significant barrier for students in underserved regions.','然而，数字鸿沟仍然是欠服务地区学生的一个重大障碍。'),
+      S('Addressing this inequality requires coordinated efforts from governments, technology companies, and educational institutions alike.','解决这种不平等需要政府、科技公司和教育机构的协调努力。'),
+    ],
+  },
+  // ===== Level 5: Advanced paragraphs =====
+  { id:'dict-05',title:'Advanced Paragraph - Globalization',level:5,stage:4,
+    sentences:[
+      S('Globalization has fundamentally reshaped the economic, cultural, and political landscape of the modern world.','全球化从根本上重塑了现代世界的经济、文化和政治格局。'),
+      S('While it has facilitated unprecedented levels of international trade and cultural exchange, it has also been criticized for exacerbating inequality and eroding local traditions.','虽然它促进了前所未有的国际贸易和文化交流水平，但它也因加剧不平等和侵蚀地方传统而受到批评。'),
+      S('The interconnectedness of global supply chains means that disruptions in one region can have far-reaching consequences across the entire world economy.','全球供应链的互联性意味着一地区的 disruptions 可能对整个世界经济产生深远影响。'),
+      S('Moving forward, the challenge for policymakers is to harness the benefits of globalization while mitigating its negative effects through thoughtful regulation and international cooperation.','展望未来，政策制定者面临的挑战是如何利用全球化的好处，同时通过深思熟虑的监管和国际合作来减轻其负面影响。'),
+    ],
+  },
+  { id:'dict-05b',title:'Advanced Paragraph - Technology Ethics',level:5,stage:4,
+    sentences:[
+      S('The rapid advancement of artificial intelligence has sparked intense debate about its ethical implications and societal impact.','人工智能的快速发展引发了关于其伦理影响和社会影响的激烈辩论。'),
+      S('Concerns about algorithmic bias, privacy violations, and the potential displacement of millions of workers have prompted calls for stronger regulatory frameworks.','对算法偏见、隐私侵犯和数百万工人可能被取代的担忧，促使人们呼吁建立更强的监管框架。'),
+      S('Proponents argue that AI, if developed responsibly, could help solve some of humanity\'s most intractable problems, from climate change to disease.','支持者认为，如果负责任地开发，AI 可以帮助解决人类一些最棘手的问题，从气候变化到疾病。'),
+      S('Achieving this balance between innovation and protection is perhaps the defining technological challenge of our time.','在创新和保护之间取得这种平衡，也许是我们这个时代的决定性技术挑战。'),
+      S('Ultimately, the decisions we make today about how to govern emerging technologies will shape the trajectory of human civilization for generations to come.','最终，我们今天做出的关于如何治理新兴技术的决定，将塑造未来几代人人类文明的轨迹。'),
+    ],
+  },
+];
