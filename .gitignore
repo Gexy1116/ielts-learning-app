@@ -6,9 +6,6 @@ ocr-pages/
 public/audio/
 *.py
 *.mjs
-package-lock.json
-src/data/english/vocabulary-extended.ts
-extra-words*
 build-book*
 generate-*
 parse-*
@@ -16,4 +13,6 @@ rebuild-*
 batch-*
 ocr-*
 add-more-*
+extra-words*
 .env
+package-lock.json
